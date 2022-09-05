@@ -1,0 +1,267 @@
+:root {
+  --Primary-Font: "Cormorant Upright", serif;
+  --Secondary-Font: "Inter", sans-serif;
+}
+
+/* Resets & Commons */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+/* End of Resets & Commons */
+
+/* Temps */
+.bord {
+  border: 0.1rem solid red;
+}
+/* End of Temps */
+
+body {
+  background-color: #111315;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem 8rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.navigation {
+  justify-content: space-between;
+}
+
+.navigation .btns .btn {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  color: #777;
+}
+
+.navigation .tabs {
+  background-color: #000;
+  padding: 0.5rem 0;
+  border-radius: 3rem;
+}
+
+.navigation .tabs li {
+  font-family: var(--Secondary-Font);
+  font-size: 1.5rem;
+  color: #777;
+  margin: 0 0.5rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.navigation .tabs li.active {
+  background-color: #323337;
+  color: #fff;
+}
+
+.btn-upload {
+  font-family: var(--Secondary-Font);
+  font-weight: 500;
+  font-size: 1.8rem;
+  background-color: #2e8bff;
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 3rem;
+}
+
+.btn-upload i {
+  margin-right: 1rem;
+}
+
+.idk {
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+
+.idk h1 {
+  font-family: var(--Primary-Font);
+  font-size: 6rem;
+  color: #2e8bff;
+}
+
+.search-bar {
+  font-family: var(--Secondary-Font);
+  position: relative;
+}
+
+.search-bar input {
+  width: 35rem;
+  font-size: 1.6rem;
+  background: transparent;
+  border: 0.1rem solid #777;
+  color: #fff;
+  padding: 1.5rem 5rem 1.5rem 2rem;
+  border-radius: 3rem;
+}
+
+.search-bar input::placeholder {
+  font-size: 1.7rem;
+}
+
+/* .search-bar button {
+  font-size: 3rem;
+  position: absolute;
+  right: -3.1rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #777;
+  padding: 1.2rem 1.5rem;
+  border-radius: 50%;
+} */
+
+.search-bar i {
+  font-size: 2.5rem;
+  position: absolute;
+  right: -3rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #777;
+  padding: 1.2rem 1.5rem;
+  border-radius: 50%;
+}
+
+.category {
+  font-family: var(--Secondary-Font);
+  position: relative;
+}
+
+.btn-add-category {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  right: 0;
+  background-color: #777;
+  color: #ddd;
+  padding: 0.7rem 1.7rem;
+  border-radius: 3rem;
+}
+
+.category ul {
+  justify-content: left;
+  border-bottom: 0.1rem solid #333;
+}
+
+.category li {
+  font-size: 1.8rem;
+  color: #777;
+  padding: 1rem 0;
+  margin: 0 5rem 0 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.category li.active {
+  color: #fff;
+  border-bottom: 0.1rem solid #fff;
+}
+
+.category li img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.collection {
+  font-family: var(--Primary-Font);
+  margin: 5rem 0;
+  /* flex-direction: column; */
+}
+
+.collection div {
+  justify-content: left;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.collection .info-main {
+  width: 30rem;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-right: 2rem;
+}
+
+.collection h1 {
+  font-size: 5rem;
+  color: #2e8bff;
+  margin-bottom: 1rem;
+}
+
+.collection p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #777;
+}
+
+.collection .imgs {
+  width: 100%;
+  display: flex;
+  /* justify-content: left; */
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.collection .imgs .img {
+  margin: 0 3rem 4rem 0;
+}
+
+.collection .imgs .img-wrapper {
+  width: 18rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+  /* border: 0.1rem solid red; */
+}
+
+.collection .tagline {
+  font-family: var(--Secondary-Font);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.collection img {
+  width: 100%;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.btn-like {
+  font-size: 2.3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #ddd;
+}
+
+.btn-like.liked {
+  color: red;
+}

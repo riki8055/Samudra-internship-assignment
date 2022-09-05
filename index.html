@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Assignment - Samudra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be88982d59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="center">
+    <div class="container">
+        <header>
+            <div class="navigation center">
+                <div class="btns">
+                    <button class="btn btn-gear">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <button class="btn btn-bell">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                </div>
+
+                <ul class="tabs center">
+                    <li class="active">Timeline</li>
+                    <li>Albums</li>
+                    <li>Events</li>
+                    <li>Favorites</li>
+                </ul>
+
+                <button class="btn btn-upload center">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    Upload photos
+                </button>
+            </div>
+            <div class="idk center">
+                <h1>Library</h1>
+                <div class="search-bar">
+                    <input type="text" class="input input-search" placeholder="Search all photos">
+                    <!-- <button class="btn btn-search "> -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- </button> -->
+                </div>
+            </div>
+        </header>
+
+        <section class="gallery">
+            <div class="category">
+                <ul class="center">
+                    <li class="active">All photos</li>
+                    <li>
+                        <img src="./Icons/money-bag.png">
+                        Architecture
+                    </li>
+                    <li>
+                        <img src="./Icons/mountain.png">
+                        Kashmir
+                    </li>
+                    <li>
+                        <img src="./Icons/sailboat.png">
+                        Seaside
+                    </li>
+                    <li>
+                        <img src="./Icons/fish.png">
+                        Lake view
+                    </li>
+                    <li>
+                        <img src="./Icons/italy.png">
+                        Italy
+                    </li>
+                    <li>
+                        <img src="./Icons/chinese.png">
+                        China
+                    </li>
+                    <li>
+                        <img src="./Icons/argentina.png">
+                        Argentina
+                    </li>
+                </ul>
+                <button class="btn btn-add-category">
+                    +New category
+                </button>
+            </div>
+
+            <div class="collection">
+                <div class="center">
+                    <div class="info-main center">
+                        <h1 class="day">Today</h1>
+                        <p class="date">Friday, 26 August 2022</p>
+                    </div>
+                    <div class="imgs">
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/adam-bixby-1W1VSHDCZiQ-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">architect_789.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/avi-werde-hHz4yrvxwlA-unsplash.jpg">
+                                <button class="btn btn-like liked">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">New-house_182.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/deepmind-2EpKCoEgKZo-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">Abstract_44533.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/firos-nv-Rr3B0LH7W3k-unsplash.jpg">
+                                <button class="btn btn-like liked">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">nature-mother_091.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/jason-briscoe-AQl-J19ocWE-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">kitchen-sansudan.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/kristine-tanne-EZT6qusWOBQ-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">Barakpore valley.jpg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <div class="info-main center">
+                        <h1 class="day">This week</h1>
+                        <p class="date">21 to 25 August 2022</p>
+                    </div>
+                    <div class="imgs">
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/kristine-tanne-EZT6qusWOBQ-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">Barakpore valley.jpg</p>
+                        </div>
+
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/lefteris-kallergis-ewSBvLSp3Tc-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">New-house_221.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/lieve-ransijn-w2mewP9uqbQ-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">seg_12399.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/nate-johnston-6ajf6BAyYt4-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">seg_11580.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/nina-luong-IOwItPmnkyU-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">Arianes-554.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/pierre-chatel-innocenti-Lk-nu_hX6ms-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">Bridge.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/pixasquare-4ojhpgKpS68-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">Old-house_123.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/prayer-flags-0ICxgY6vdCA-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">Village Oktawa.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/reiseuhu-58MWgP3SsmY-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">city-valley_91.jpg</p>
+                        </div>
+
+                        <div class="img">
+                            <div class="img-wrapper">
+                                <img src="./Photos/robin-wersich-Q0IrpWQIMR4-unsplash.jpg">
+                                <button class="btn btn-like">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
+                            <p class="tagline">New-house_181.jpg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
