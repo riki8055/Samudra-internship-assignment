@@ -148,6 +148,7 @@ body {
 .category {
   font-family: var(--Secondary-Font);
   position: relative;
+  border-bottom: 0.1rem solid #333;
 }
 
 .btn-add-category {
@@ -163,8 +164,9 @@ body {
 }
 
 .category ul {
+  width: 90%;
+  overflow: hidden;
   justify-content: left;
-  border-bottom: 0.1rem solid #333;
 }
 
 .category li {
@@ -265,3 +267,26 @@ body {
 .btn-like.liked {
   color: red;
 }
+
+/* Responsives */
+html {
+  font-size: 60%;
+}
+
+.category li {
+  font-size: 1.6rem;
+}
+
+.collection .imgs .img {
+  margin: 0 2rem 3rem 0;
+}
+
+@media (max-width: 1050px) {
+  .category ul {
+    width: 85%;
+  }
+  .category li {
+    margin: 0 4rem 0 0;
+  }
+}
+/* End of Responsives */
